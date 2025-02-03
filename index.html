@@ -1,1 +1,94 @@
-helloworld
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Notes Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f7f3e9;
+      font-family: 'Arial', sans-serif;
+      padding: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .note {
+      background-color: #fffd82;
+      width: 200px;
+      height: 200px;
+      padding: 1rem;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      border: 1px solid #e0ddc3;
+      border-radius: 8px;
+      transform: rotate(-2deg);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .note:hover {
+      transform: rotate(0deg);
+      transition: transform 0.2s;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      color: #5d4d00;
+    }
+
+    p {
+      color: #5d5d5d;
+      font-size: 0.9rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: #006d77;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="note">
+    <h2>About Me</h2>
+    <p>Hello! I'm Khairun Shaik, a Software Developer and Machine Learning enthusiast with a passion for building impactful applications.</p>
+  </div>
+
+  <div class="note">
+    <h2>Resume</h2>
+    <p><a href="./resume.pdf" target="_blank">Download Resume</a></p>
+  </div>
+
+  <div class="note">
+    <h2>Project 1</h2>
+    <p>Traffic Light Optimization Algorithm to improve urban traffic flow using AI techniques.</p>
+  </div>
+
+  <div class="note">
+    <h2>Project 2</h2>
+    <p>AI Image Classifier that detects objects in real-time with high accuracy.</p>
+  </div>
+
+  <div class="note">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourlinkedin" target="_blank">linkedin.com/in/yourlinkedin</a></p>
+  </div>
+
+</body>
+</html>
